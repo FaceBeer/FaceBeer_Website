@@ -14,7 +14,7 @@ function createData(name: string, bac: number, timestamp: Date): Data {
 function LeaderboardPage(): ReactElement {
   const [rows, setRows] = React.useState<Data[]>([]);
   const { name } = useParams();
-  const requestURL = `http://api.facebeer.net:8000/user/${name}`;
+  const requestURL = `https://api.facebeer.net:8000/user/${name}`;
 
   useEffect(() => {
     if (name !== undefined) {

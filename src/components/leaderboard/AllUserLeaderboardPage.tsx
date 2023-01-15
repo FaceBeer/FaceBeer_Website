@@ -11,7 +11,7 @@ function createData(name: string, bac: number, timestamp: Date): Data {
 
 function AllUserLeaderboardPage(): ReactElement {
   const [rows, setRows] = React.useState<Data[]>([]);
-  const base_url = "http://api.facebeer.net:8000/get_all_users";
+  const base_url = "https://api.facebeer.net:8000/get_all_users";
 
   useEffect(() => {
     fetchData();
